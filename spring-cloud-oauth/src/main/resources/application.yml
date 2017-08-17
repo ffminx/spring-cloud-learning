@@ -1,0 +1,31 @@
+logging.file: logs/${spring.application.name}.log
+logging.level.root: INFO
+logging.level.cn.gaiasys: DEBUG
+
+server:
+  port: 8081
+  tomcat:
+    max-threads: 128
+    min-spare-threads: 64
+
+spring:
+  application:
+    name: oauth-server
+  main:
+    banner-mode: "console"
+  mvc:
+    favicon.enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+
+zuul:
+  routes:
+    oauth:
+      path: /path/**
+      serviceId: oauth-server
+    resource:
+      path: /resource/**
+      serviceId: resource-server

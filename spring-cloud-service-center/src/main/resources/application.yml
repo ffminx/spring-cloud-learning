@@ -1,0 +1,26 @@
+logging.file: logs/${spring.application.name}.log
+logging.level.root: INFO
+logging.level.cn.gaiasys: DEBUG
+
+server:
+  port: 8080
+  tomcat:
+    max-threads: 128
+    min-spare-threads: 64
+
+spring:
+  application:
+    name: service-center-server
+  main:
+    banner-mode: "console"
+  mvc:
+    favicon.enabled: false
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
