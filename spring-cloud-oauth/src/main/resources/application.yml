@@ -23,9 +23,6 @@ eureka:
 
 zuul:
   routes:
-    oauth:
-      path: /path/**
-      serviceId: oauth-server
     resource:
       path: /resource/**
       serviceId: resource-server

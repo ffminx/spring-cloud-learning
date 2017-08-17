@@ -18,7 +18,7 @@ public class ServiceCenterApplication {
 
     public static void main(String[] args) {
 
-        new SpringApplicationBuilder(ServiceCenterApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ServiceCenterApplication.class).run(args);
 
     }
 }
