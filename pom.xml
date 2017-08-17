@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>zh.ffminx.spring</groupId>
-    <artifactId>spring.cloud</artifactId>
+    <artifactId>spring-cloud</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>spring-cloud-service-center</module>
         <module>spring-cloud-oauth</module>
         <module>spring-cloud-resource</module>
-        <module>spring-cloud-service-center</module>
     </modules>
 
     <parent>
@@ -22,7 +22,6 @@
     </parent>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>

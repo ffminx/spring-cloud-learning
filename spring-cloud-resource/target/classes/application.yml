@@ -3,7 +3,7 @@ logging.level.root: INFO
 logging.level.cn.gaiasys: DEBUG
 
 server:
-  port: 8082
+  port: 8092
   tomcat:
     max-threads: 128
     min-spare-threads: 64

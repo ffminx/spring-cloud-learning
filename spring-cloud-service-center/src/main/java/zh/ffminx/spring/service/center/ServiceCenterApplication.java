@@ -1,18 +1,14 @@
 package zh.ffminx.spring.service.center;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @author fengmin.xu E-mail: fengmin.xu@56qq.com
  * @since 2017-08-17 14:24
  */
-@Configuration
-@ComponentScan
-@EnableAutoConfiguration
+@SpringBootApplication
 @EnableEurekaServer
 public class ServiceCenterApplication {
 
